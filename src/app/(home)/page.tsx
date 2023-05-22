@@ -1,11 +1,14 @@
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-    title: 'Stock Manager',
-}
+//import useStyles from './page.styles'
 
 const Home = () => {
-    return <></>
+    //const { classes } = useStyles()
+    return (
+        <section>
+            <h1>Home</h1>
+        </section>
+    )
 }
 
 export default Home
