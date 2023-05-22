@@ -1,19 +1,25 @@
-'use client'
+import { Metadata } from 'next'
 
-import { MantineProvider } from '@mantine/core'
+import { ClerkProvider } from '@clerk/nextjs'
+
+import { Navbar } from '@/components/Navbar'
 
 import './globals.css'
-import { Navbar } from '@/components/Navbar'
+
+export const metadata: Metadata = {
+    title: 'Stock Manager',
+    description: 'Personal Stock Manager',
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <MantineProvider withGlobalStyles withNormalizeCSS>
+        <ClerkProvider>
             <html lang="pt">
                 <body>
                     <Navbar />
                     {children}
                 </body>
             </html>
-        </MantineProvider>
+        </ClerkProvider>
     )
 }
