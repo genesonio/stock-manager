@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "pre-commit": "yarn lint --fix && git add -A ."
+    "pre-commit": "yarn lint --fix"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.18.2",
