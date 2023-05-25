@@ -4,13 +4,16 @@ export const HEADER_HEIGHT: string = rem(64)
 
 const useStyles = createStyles((theme) => ({
     root: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        maxWidth: '100vw',
+        width: '100vw',
         height: HEADER_HEIGHT,
-        margin: 'auto',
         paddingInline: '5%',
+    },
+    nav: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        height: '100%',
+        width: '100%',
     },
     dropdown: {
         position: 'absolute',
